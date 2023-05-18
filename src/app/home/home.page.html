@@ -1,29 +1,30 @@
-<div class="container">
-  <ion-grid>
- <ion-row>
-  <ion-col size="6" class="left-side">
-    <img src="https://images.pexels.com/photos/11942783/pexels-photo-11942783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagem do balao" width="100%" height="100%">
-  </ion-col>
-  <ion-col size="6" class="right-side">
-    <ion-label> <h1>Criar Conta</h1></ion-label>
-    <ion-input type="text" label="Nome"></ion-input>
-    <ion-input type="email" label="Email"></ion-input>
-    <ion-input type="password" label="Senha"></ion-input>
-    <ion-input type="password" label="Confirmar Senha"></ion-input>
-    <ion-button>Criar Conta</ion-button>
-    <p>Login com</p>
-    <ion-row>
-    <ion-button shape="round" class="button1">Facebook</ion-button>
-  </ion-row>
+<ion-grid class="container-gid">
   <ion-row>
-    <ion-button shape="round" class="button2">Twitter</ion-button>
+    <!-- Divisao do lado da imagem -->
+    <ion-col size="6" id="left-side">
+      <!-- Aqui fica a imagem, a imagem esta diferente por que noa achei a imagem do layout entao emprovissei -->
+      <img src="https://images.pexels.com/photos/2388650/pexels-photo-2388650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+      alt="Imagem de dois balões coloridos voando de dia com varias nuvens sobrevoando por cima de uma  floricultura" width="100%">
+    </ion-col>
+    <!-- Divisão do formulario -->
+    <ion-col size="6" id="right-side">
+      <ion-label>
+        <h1 style="text-transform: capitalize;">Criar Conta</h1>
+      </ion-label>
+      <ion-input type="text" label="Nome"></ion-input>
+      <ion-input type="email" label="Email"></ion-input>
+      <ion-input type="password" label="Senha"></ion-input>
+      <ion-input type="password" label="Confirmar Senha"></ion-input>
+      <ion-button onclick="clicou()"  class="buttonDobbleMaiuscula"  style="--background: rgb(0, 194, 168); --border-radius: 10px; margin-top: 5%; text-transform: capitalize;">
+        <span>Criar Conta</span> 
+      </ion-button>
+      <p>Login com</p>       
+      <ion-button shape="round"  style="--background: blue; text-transform: lowercase;"><span>Facebook</span></ion-button>     
+      <ion-button shape="round" color="secondary" style="text-transform: lowercase;"><span>Twitter</span></ion-button> 
+      <ion-button shape="round"  style="--background: rgb(122, 18, 18); text-transform: lowercase;" class="buttonResponsive
+      "><span>google</span></ion-button>
+    </ion-col>
   </ion-row>
-  <ion-row>
-    <ion-button shape="round" class="button3">google</ion-button>
-  </ion-row>
-    
-    
-  </ion-col>
- </ion-row>
 </ion-grid>
-</div>
+
+
